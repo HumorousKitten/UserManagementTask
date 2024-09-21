@@ -3,3 +3,6 @@ export interface IUser {
 	name: string
 	email: string
 }
+
+
+export type TAddUserFunc = (name: string, email: string) => void

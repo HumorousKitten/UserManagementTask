@@ -1,20 +1,19 @@
 import React from 'react'
 import UserManagement from './components/UserManagement'
-import FormAddingUsers from './components/formAddingUsers'
-import { IUser } from './types/types'
+import FormAddingUsers from './components/FormAddingUsers'
+import { IUser} from './types/types'
 
-//Todo: 
-// 1 перетащить функцию удаления пользователя в компонент пользователей
-//реализовать проверку на наличие введеного емайл
+import './App.css'
+
 
 
 function App() {
   const [users, setUsers] = React.useState<IUser[]  | []>([])
-  console.log(users)
+
   return (
     <div className='app'>
-      <UserManagement usersList = {users} />
-      <FormAddingUsers setUser = {setUsers} />
+      <UserManagement usersList = {users} setUser = {setUsers}/>
+      <FormAddingUsers setUser = {setUsers} usersList = {users}/>
     </div>
   )
 }

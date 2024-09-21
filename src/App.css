@@ -1,0 +1,163 @@
+body {
+	background: #1F1B21;
+}
+
+
+.app {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	min-height: 100svh;
+	align-items: center;
+	position: relative;
+}
+
+
+.UserManagement {
+	order: 2;
+	color: white;
+}
+
+
+.formUser {
+	order: 1;
+	background: #29292E;
+	width: 25vw;
+	max-height: 30vh;
+	padding: 1.875rem;
+}
+
+.formUser h3 {
+	color: white;
+	font-size: 1.56rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.container {
+	width: calc(100% - 6rem);
+}
+
+.formUser_fields {
+	display: flex;
+	flex-direction: column;
+	margin-inline: auto;
+}
+
+
+.formUser input {
+	color: white;
+	border: 1px solid rgb(77, 77, 77);
+	padding: 0.9375rem;
+	border-radius: 0.75rem;
+}
+
+.formUser  input + input {
+	margin-top: 0.9375rem;
+}
+
+.formUser  button {
+	background: #2D609B;
+	width: 9.375rem;
+	align-self: center;
+	margin-top: 1.25rem;
+	padding: 0.8rem;
+	border-radius: 0.9375rem;
+	color: white;
+}
+
+.UserManagement {
+	flex-grow: 0;
+	margin-left: 40px;
+	overflow-y: auto;
+	max-height: 30vh;
+	padding: 1.875rem;
+	display: flex;
+}
+
+.UserManagement_item {
+	border: 1px solid #ac9d9d;
+	padding: 0.9375rem;
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+	border-radius: 0.44rem;
+	justify-content: space-between;
+}
+
+.UserManagement_item + .UserManagement_item{
+	margin-top: 0.625rem;
+}
+
+.item_info {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.25rem;
+}
+
+.item_btns {
+	display: flex;
+	flex-direction: column;
+}
+
+.item_btns button{
+	padding: 0.8rem;
+	border-radius: 0.9375rem;
+}
+
+.item_btns button:first-child {
+	background: rgb(216, 124, 124);
+}
+
+.item_btns button:last-child{
+	background: #2D609B;
+}
+
+.item_btns button + button{
+	margin-top: 0.625rem;
+}
+
+.modalForm {
+	background: #29292E;
+	position: absolute;
+	z-index: 999;
+	padding: 1.875rem;
+	translate: -55% -35%;
+	width: 50vw;
+	height: 50vh;
+}
+
+.modalForm h3 {
+	font-size: 1.56rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.modalForm_fields {
+	display: flex;
+	flex-direction: column;
+	margin-inline: auto;
+}
+
+.modalForm_fields input{
+	color: white;
+	border: 1px solid rgb(77, 77, 77);
+	padding: 0.9375rem;
+	border-radius: 0.75rem;
+}
+
+.modalForm_fields input + input{
+	margin-top: 0.9375rem;
+}
+
+.modalForm_fields  button {
+	background: #2D609B;
+	width: 9.375rem;
+	align-self: center;
+	margin-top: 1.25rem;
+	padding: 0.8rem;
+	border-radius: 0.9375rem;
+	color: white;
+}
